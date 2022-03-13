@@ -52,20 +52,7 @@ class Phrase():
         '''
         return ", ".join(self.is_guessed)
             
-            
-    
-    def phrase_to_list(self):
-        '''
-        phrase_to_list creates an empty list and appends each
-        letter of the phrase as an item.
 
-        Then we return the newly created list.
-        '''
-        phrase_as_list = []
-        for character in self.phrase:
-            phrase_as_list.append(character.lower())
-        return phrase_as_list
-    
     def display_phrase(self):
         '''
         display_phrase generates a list of characters to display for the user.

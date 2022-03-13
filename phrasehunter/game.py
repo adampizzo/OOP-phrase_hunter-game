@@ -1,7 +1,9 @@
+import random
+
 from phrasehunter.phrase_generator import generate_phrase_list
 from phrasehunter.phrase import Phrase
 from phrasehunter.utils import s_sleep, m_sleep, l_sleep, s_clear
-import random
+
 
 
 class Game:
@@ -253,15 +255,28 @@ class Game:
 
 
     def start_game(self):
+        '''
+        start_game runs the game. Game will continue while
+        self.playing is True.
+        
+        Sets the lives of the player to the default life.
+        
+        Gets the phrase and sets it to the instance attribute phrase.
+        
+        Calls the game_round() method
+        
+        Calls the keep_playing() method
+        
+        Calls the game_results method
+        '''
         while self.playing:
             self.lives = self.DEFAULT_LIVES
             self.phrase = Phrase(self.get_phrase())
-            self.phrase.phrase_to_list()
             self.game_round()
             self.keep_playing()
             self.game_results()
             
-            
+
 
 
 

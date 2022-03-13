@@ -19,3 +19,4 @@ def s_clear():
         os.system('cls')
     else:
         os.system('clear')
+

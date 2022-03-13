@@ -10,10 +10,10 @@ def m_sleep():
     time.sleep(1)
     
 def l_sleep():
-    time.sleep(3)
+    time.sleep(2.25)
     
 def s_clear():
-    ''' The purpose of the clear function is to determine what the
+    ''' The purpose of the s_clear function is to determine what the
         operating system and then clear the screen.'''
     if sys.platform == "win32":
         os.system('cls')
